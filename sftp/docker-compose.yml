@@ -1,0 +1,8 @@
+services:
+  sftp:
+    image: atmoz/sftp
+    ports:
+      - "2222:22"
+    volumes:
+      - ./data:/home/user/upload
+    command: user:password:1001
