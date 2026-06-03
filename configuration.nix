@@ -24,6 +24,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Enable docker
   virtualisation.docker.enable = true;
 
   # Set your time zone.
@@ -47,7 +48,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  # Enable the XFCE Desktop Environment.
+  # Enable the LXQT Desktop Environment.
   services.xserver.displayManager.lightdm.enable = true;
   services.xserver.desktopManager.lxqt.enable = true;
 
@@ -57,6 +58,7 @@
     variant = "";
   };
   
+  # RDP
   services.xrdp = {
     enable = true;
     openFirewall = true;
