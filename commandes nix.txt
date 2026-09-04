@@ -3,3 +3,7 @@ sudo nixos-rebuild switch
 sudo nixos-rebuild list-generations
 
 sudo nix-collect-garbage -d
+
+sudo cp configuration.nix /etc/nixos/
+
+sudo cp -r lxqt /home/yaznari/.config/
